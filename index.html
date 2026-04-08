@@ -2,85 +2,70 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO (50–160字元) -->
+    <meta
+      name="description"
+      content="個人介紹網站:設計師轉職為後端工程師，來自台灣基隆，居住在比利時，正在持續學習與成長中。"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>個人介紹網站</title>
+
     <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-      html,
-      body {
+      * {
         margin: 0;
         padding: 0;
-        max-width: 100%;
+        box-sizing: border-box;
       }
+
       body {
-        font-family:
-          system-ui,
-          -apple-system,
-          "Segoe UI",
-          Roboto,
-          "Noto Sans TC",
-          Arial,
-          sans-serif;
+        font-family: Arial, sans-serif;
+        padding: 20px;
         line-height: 1.6;
       }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
       img {
         max-width: 100%;
         height: auto;
-        display: block;
       }
-      .container {
-        width: 1920px;
-        margin: 0 auto;
-        padding: 16px;
+
+      a {
+        color: blue;
       }
-      nav a {
-        margin-right: 12px;
-        text-decoration: none;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 16px;
-      }
-      .col-12 {
-        grid-column: span 12;
-      }
-      @media (min-width: 768px) {
-        .col-md-6 {
-          grid-column: span 6;
-        }
-      }
-      .card {
-        border: 1px solid #e5e7eb;
-        border-radius: 12px;
-        padding: 16px;
-        background: #fff;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+
+      html,
+      body {
+        overflow-x: hidden;
       }
     </style>
   </head>
 
   <body>
-    <header class="container" role="banner">
-      <nav aria-label="主選單">
-        <a href="#about">關於我</a>
-        <a href="#projects">作品</a>
-        <a href="https://example.com/blog">技術部落格</a>
-        <a href="mailto:me@example.com">聯絡我</a>
-      </nav>
-      <h1>你好，我是小明：前端工程師新手之路</h1>
-      <p>歡迎來到我的個人網站！這裡整理了學習紀錄、Side Project 與實作心得。</p>
-    </header>
+    <div class="container">
+      <!-- 唯一的 h1 -->
+      <h1>關於我</h1>
 
-    <footer class="container" role="contentinfo">
-      <p>© 2025 My Portfolio · <a href="#">GitHub</a></p>
-      <img
-        src="https://source.unsplash.com/600x200/?technology,abstract"
-        alt=""
-      />
-    </footer>
+      <p>
+        我原本是一名設計師，目前正在轉職為後端工程師。
+        我來自台灣基隆，目前居住在比利時，並持續學習程式開發相關技術。
+      </p>
+
+      <!-- 必須有 alt -->
+      我家養了一隻狗，牠的名字叫做「max」，是一隻非常可愛的傑克羅素小狗狗。
+      <img src="/dog.jpeg" alt="我家的狗" />
+
+      <!-- 必須有有效 href -->
+      <p>
+        更多資訊：
+        <a href="https://example.com">https://example.com</a>
+      </p>
+    </div>
   </body>
 </html>
